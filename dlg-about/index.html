@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>弹出对话框组件测试</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+<input id="popup"  type="button" value="弹出对话框">
+<hr/>
+<!-- <div class="notepad-dlg-about">
+    <div class="dialogbox notepad-dlgbox">
+      <div class="notepad-dlg-titlebar">
+        <p class="title">关于“记事本”</p>
+        <span class="close-btn">✖</span>
+      </div>
+      <div class="main notepad-dlg-main">
+        <h1 class="slogan">JSNotepad</h1>
+        <hr>
+        <img class="app-logo" src="../../images/notepad-icon-32.png" alt="JSNotepad">
+        <div class="info">
+          <p>作者：王顶</p>
+          <p>QQ：408542507</p>
+          <p>仓库地址：<a href="https://github.com/wangding/jsnotepad/" target="_blank">https://github.com/wangding/jsnotepad/</a></p>
+        </div>
+        <input class="btn-ok btn" type="button" value="确定">
+      </div>
+    </div>
+  </div> -->
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>    
+<script src="./index.js"></script>
+<script>
+    $(function(){
+        var $btnDlg=$('#popup');
+        $btnDlg.click(function() {
+            $dlgGoto.show({
+                num:5,
+                title: "发送验证码",
+                onClick:function() {
+                    alert("短信已发送");
+                }
+            });
+        });
+    })
+</script>
+</body>
+</html>
